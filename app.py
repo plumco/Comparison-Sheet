@@ -10,4 +10,4 @@ with open("index.html", "r", encoding="utf-8") as f:
 
 # 2. MASSIVELY INCREASE HEIGHT & DISABLE INNER SCROLLBAR
 # I set height to 3000 to ensure it fits all your rows.
-components.html(html_data, height=3000, scrolling=False)
+components.html(html_data, height=4000, scrolling=False)
