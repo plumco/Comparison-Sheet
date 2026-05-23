@@ -1,12 +1,13 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-# THIS LINE FIXES THE WIDTH (It must be the first Streamlit command)
+# 1. THIS MAKES IT WIDE (It MUST be the very first Streamlit command)
 st.set_page_config(layout="wide")
 
 # Read your HTML file
-with open("index.html", "r", encoding="utf-9") as f:
+with open("index.html", "r", encoding="utf-8") as f:
     html_data = f.read()
 
-# Render the HTML (I increased the height here so it fits better)
-components.html(html_data, height=1000, scrolling=True)
+# 2. MASSIVELY INCREASE HEIGHT & DISABLE INNER SCROLLBAR
+# I set height to 3000 to ensure it fits all your rows.
+components.html(html_data, height=3000, scrolling=False)
