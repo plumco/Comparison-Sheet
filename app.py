@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide")
 
 # Read your HTML file
-with open("index.html", "r", encoding="utf-8") as f:
+with open("index.html", "r", encoding="utf-9") as f:
     html_data = f.read()
 
 # Render the HTML (I increased the height here so it fits better)
