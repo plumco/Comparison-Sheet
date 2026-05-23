@@ -6,4 +6,4 @@ with open("index.html", "r", encoding="utf-8") as f:
     html_data = f.read()
 
 # Render the HTML inside your Streamlit app
-components.html(html_data, height=800, scrolling=True)
+components.html(html_data, height=1600, scrolling=True)
